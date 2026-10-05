@@ -1,0 +1,28 @@
+{
+  "name": "vitto-loan-repayment-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Loan repayment schedule, payment recording and loan position service for MSME lending",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:migrate": "node scripts/setup-db.js",
+    "db:seed": "node scripts/seed.js",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration"
+  },
+  "dependencies": {
+    "firebase": "^11.1.0",
+    "firebase-admin": "^12.7.0",
+    "next": "^14.2.21",
+    "pg": "^8.13.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.8"
+  }
+}
