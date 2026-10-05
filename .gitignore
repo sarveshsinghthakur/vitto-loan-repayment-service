@@ -8,3 +8,6 @@ coverage/
 *.log
 .DS_Store
 firebase-service-account*.json
+
+# confidential assessment input (not for redistribution)
+Vitto_FullStack_Assignment.pdf
