@@ -5,8 +5,8 @@ against them, and reports the current position of a loan for MSME lending.
 
 ## Deployed link
 
-- **App:** `DEPLOYED_URL` (updated after deployment)
-- **Test account:** `TEST_ACCOUNT` (email / password, provided in the submission email)
+- **App:** https://vitto-loan-repayment.vercel.app (Vercel, production)
+- **Test account:** `test@vitto.money` / `Vitto#Test1234` (also provided in the submission email)
 
 ### Seeded loans
 
@@ -31,7 +31,7 @@ npm run dev                 # http://localhost:3000
 ## Database and host
 
 - **Database:** PostgreSQL. The schema is created by `npm run db:migrate` (source: `lib/schema.js`) — never by hand. CI runs the same script before the tests.
-- **Host:** `DEPLOY_HOST` (updated after deployment). Any host that runs Next.js route handlers works (Vercel, Render or equivalent).
+- **Host:** Vercel (US East `iad1`) serving the Next.js app; **Neon** serverless Postgres (`aws-ap-southeast-1`) as the database. Any host that runs Next.js route handlers works (Vercel, Render or equivalent).
 - Firebase credentials are never committed; all required variables are listed in `.env.example`.
 
 ## Tests
